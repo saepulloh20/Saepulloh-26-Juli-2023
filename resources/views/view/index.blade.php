@@ -28,8 +28,8 @@
                                         <td>{{ $pegawai->pegawai_jabatan }}</td>
                                         <td>{{ $pegawai->pegawai_umur }}</td>
                                         <td>{{ $pegawai->pegawai_alamat }}</td>
-                                        <td>
-                                            <button type="button" class="btn btn-primary btn-sm mb-3"
+                                        <td class="d-flex">
+                                            <button type="button" class="btn btn-primary btn-sm mb-3 me-2"
                                                 data-bs-toggle="modal" data-bs-target="#exampleModal{{ $pegawai->id }}"
                                                 data-bs-whatever="@fat">Detail</button>
                                             <form action="{{ route('pegawai.destroy', $pegawai->id) }}" method="POST">
